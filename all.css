@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #293B29;
+}
+#clock{
+    width: 350px;
+    height: 350px;
+    background-color: #3D5A45;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20%;
+}
+#clock-body{
+    width: 300px;
+    height: 300px;
+    background-color: #293B29;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: solid 3px #22300E;
+}
+.clock-time{
+    width: 86%;
+    height: 1px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 43%);
+}
+.clock-time::before{
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: -0.5px;
+    left: 0;
+}
+.clock-time::after{
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: -0.5px;
+    right: 0;
+}
+.clock-time-big::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #FF7600;
+    position: absolute;
+    left: -3px;
+    top: -2.5px;
+    transform: rotate(45deg);
+}
+.clock-time-big::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #FF7600;
+    position: absolute;
+    right: -3px;
+    top: -2.5px;
+    transform: rotate(45deg);
+}
+
+.clock-time-boom{
+    width: 86%;
+    height: 1px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 43%);
+}
+.clock-time-five{
+    width: 20px;
+    height: 1px;
+    background-color: #FF7600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25%);
+}
+.clock-time-five:nth-child(2){
+    top: 1px;
+    left: 100%;
+    transform: translate(-75%);
+}
+.clock-time-five div{
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: -7px;
+    left: -14px;
+}
+.clock-time-five div:nth-child(2){
+    left: 24px;
+}
+
+.clock-hour{
+    width: 8px;
+    height: 72px;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    top: calc(50% - 72px);
+    left: calc(50% - 3px);
+    transform-origin: bottom center;
+
+}
+.clock-hour:before{
+    content: "";
+    width: 2px;
+    height: 20px;
+    background-color: #293B29;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 1px);
+}
+.clock-min{
+    width: 8px;
+    height: 96px;
+    background-color: #FF7600;
+    position: absolute;
+    top: calc(50% - 96px);
+    left: calc(50% - 3px);
+    border-radius: 15px;
+    transform-origin: bottom center;
+
+}
+.clock-min:before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3px;
+    left: calc(50% - 2px);
+}
+.clock-min:after{
+    content: "";
+    width: 1px;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 7px;
+    left: calc(50% - 0.5px);
+}
+.clock-sec{
+    width: 16px;
+    height: 126px;
+    position: absolute;
+    top: calc(50% - 126px);
+    left: calc(50% - 7px);
+    border-radius: 15px;
+    transform-origin: bottom center;
+    /* transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+}
+.clock-sec::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px #A0E605;
+    position: absolute;
+    top: 0%;
+    left: calc(50% - 5px);
+}
+.clock-sec::after{
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #A0E605;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: calc(50% - 2px);
+}
